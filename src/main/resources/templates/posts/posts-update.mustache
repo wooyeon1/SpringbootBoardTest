@@ -5,7 +5,7 @@
         <form class="card">
             <div class="card-header d-flex justify-content-between">
                 <label for="id">번호 : {{posts.id}}</label>
-                <input type="hidden" id="id" value="{{posts.id}}"> {{! label 연결 }}
+                <input type="hidden" id="id" value="{{posts.id}}">
                 <label for="createdDate">{{posts.createdDate}}</label>
             </div>
             <div class="card-header d-flex justify-content-between">
@@ -23,7 +23,7 @@
             </div>
         </form>
 
-        <!--버튼-->
+
         <a href="/posts/read/{{id}}" role="button" class="btn btn-info bi bi-arrow-return-left"> 취소</a>
         <button type="button" id="btn-update" class="btn btn-primary bi bi-pencil-square"> 완료</button>
     </div>

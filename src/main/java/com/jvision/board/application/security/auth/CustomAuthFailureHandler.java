@@ -14,9 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.net.URLEncoder;
-/**
- * 로그인 실패시 에러 메시지를 보여주기 위한 클래스
- */
+
 @Component
 public class CustomAuthFailureHandler extends SimpleUrlAuthenticationFailureHandler {
 

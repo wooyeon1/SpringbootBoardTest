@@ -8,12 +8,8 @@ import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 import java.io.Serializable;
 
-/**
- * request, response DTO 클래스를 하나로 묶어 InnerStaticClass로 한 번에 관리
- */
 public class UserDto {
 
-    /** 회원 Service 요청 DTO 클래스 */
     @Data
     @AllArgsConstructor
     @NoArgsConstructor

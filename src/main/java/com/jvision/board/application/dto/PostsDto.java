@@ -9,8 +9,6 @@ import java.util.stream.Collectors;
 
 public class PostsDto {
 
-
-    /** 게시글의 등록과 수정을 처리할 요청(Request) 클래스 */
     @Data
     @AllArgsConstructor
     @NoArgsConstructor

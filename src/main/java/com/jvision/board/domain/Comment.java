@@ -40,7 +40,6 @@ public class Comment {
     @JoinColumn(name = "user_id")
     private User user; // 작성자
 
-    /* 댓글 수정 */
     public void update(String comment) {
         this.comment = comment;
     }

@@ -1,7 +1,7 @@
-{{! Comments }}
+
 <div class="card">
     <div class="card-header bi bi-chat-dots"> {{#comments.size}}{{comments.size}}{{/comments.size}} Comments</div>
-    {{! 댓글내용 부분 }}
+
     <ul class="list-group-flush">
         {{#comments}}
             <li id="comments-{{id}}" class="list-group-item">
@@ -11,15 +11,15 @@
                 </span>
                 {{#isWriter}}
                     <a type="button" data-toggle="collapse" data-target=".multi-collapse-{{id}}"
-                       class="bi bi-pencil-square"></a> {{! 댓글 수정 버튼 }}
+                       class="bi bi-pencil-square"></a>
                     <a type="button" onclick="main.commentDelete({{postsId}},{{id}},{{userId}},{{user.id}})"
-                       class="bi bi-x-square"></a> {{! 댓글 삭제 버튼 }}
+                       class="bi bi-x-square"></a>
                 {{/isWriter}}
 
-                {{! 댓글 내용 보기 }}
+
                 <p class="collapse multi-collapse-{{id}} show">{{comment}}</p>
 
-                {{! 댓글 내용 수정 }}
+
                 <form class="collapse multi-collapse-{{id}}">
                     <input type="hidden" id="id" value="{{id}}">
                     <input type="hidden" id="postsId" value="{{postsId}}">

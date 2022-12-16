@@ -8,12 +8,9 @@ import lombok.*;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
-/**
- * request, response DTO 클래스를 하나로 묶어 InnerStaticClass로 한 번에 관리
- */
+
 public class CommentDto {
 
-    /** 댓글 Service 요청을 위한 DTO 클래스 */
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
